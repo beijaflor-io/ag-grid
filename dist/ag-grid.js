@@ -10091,6 +10091,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // if LTR, we hide body scroll if pinning right (as scroll is in right pinned),
 	    // if RTL, we hide body scroll if pinning left (as scroll is in left pinned)
 	    GridPanel.prototype.isBodyVerticalScrollActive = function () {
+	        return true;
 	        var pinningRight = this.columnController.isPinningRight();
 	        var pinningLeft = this.columnController.isPinningLeft();
 	        var centerHasScroll = this.enableRtl ? !pinningLeft : !pinningRight;
