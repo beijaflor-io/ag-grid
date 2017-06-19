@@ -1705,6 +1705,7 @@ export class GridPanel extends BeanStub {
     // if LTR, we hide body scroll if pinning right (as scroll is in right pinned),
     // if RTL, we hide body scroll if pinning left (as scroll is in left pinned)
     private isBodyVerticalScrollActive(): boolean {
+        return true;
         let pinningRight = this.columnController.isPinningRight();
         let pinningLeft = this.columnController.isPinningLeft();
         let centerHasScroll = this.enableRtl ? !pinningLeft : !pinningRight;
